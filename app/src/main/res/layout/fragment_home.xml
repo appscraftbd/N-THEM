@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".ui.HomeFragment">
 
     <!-- Placeholder layout for locking screen-->
@@ -33,18 +34,25 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:format12Hour="h:mm"
-            android:textSize="@dimen/time_size"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#feeca4"
+            android:textSize="70dp"
+            android:layout_marginTop="35dp"
             tools:text="02:34" />
 
         <TextView
             android:id="@+id/date"
+            android:layout_marginTop="-104dp"
             style="@style/TextDefault"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#feeca4"
+            android:layout_gravity="center"
             android:format12Hour="EEE, dd MMM"
             android:format24Hour="EEE, dd MMM"
             android:paddingHorizontal="3dp"
-            android:textSize="@dimen/date_size"
+            android:textSize="15dp"
             tools:text="Thu, 30 Dec" />
     </LinearLayout>
 
@@ -56,7 +64,7 @@
         android:gravity="center_vertical"
         android:orientation="vertical"
         android:paddingHorizontal="20dp"
-        android:paddingTop="112dp"
+        android:paddingTop="312dp"
         android:paddingBottom="48dp">
 
         <TextView
@@ -67,6 +75,7 @@
             android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
+            android:textColor="#feeca4"
             android:visibility="gone"
             tools:visibility="visible" />
 
@@ -78,6 +87,7 @@
             android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_2"
+            android:textColor="#feeca4"
             android:visibility="gone"
             tools:visibility="visible" />
 
@@ -89,6 +99,7 @@
             android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_3"
+            android:textColor="#feeca4"
             android:visibility="gone"
             tools:visibility="visible" />
 
@@ -100,6 +111,7 @@
             android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_4"
+            android:textColor="#feeca4"
             android:visibility="gone"
             tools:visibility="visible" />
 
@@ -111,6 +123,7 @@
             android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_5"
+            android:textColor="#feeca4"
             android:visibility="gone"
             tools:visibility="visible" />
 
@@ -160,7 +173,7 @@
         android:layout_marginBottom="56dp"
         android:text="@string/swipe_up_for_apps"
         android:visibility="gone"
-        tools:visibility="visible" />
+        tools:visibility="gone" />
 
     <!-- Set default launcher -->
     <TextView
